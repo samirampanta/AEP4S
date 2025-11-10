@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Education - Conteúdo Gratuito</title>
+    <style>
+        /* Estilo básico inspirado na sua imagem */
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f0f0f0; }
+        .navbar { background-color: #333; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8em; font-weight: bold; color: #ffc107; } /* Amarelo para destaque */
+        .search-area { flex-grow: 1; text-align: center; }
+        .search-area input { padding: 8px; border: none; border-radius: 4px; width: 400px; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; transition: color 0.3s; }
+        .nav-links a:hover { color: #ffc107; }
+
+        /* Estilo da Seção Principal (Inspirado no Amarelo/Laranja) */
+        .main-section {
+            background-color: #f7b731; /* Cor de fundo amarela/laranja */
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .main-section h1 { font-size: 3em; color: #333; margin-bottom: 30px; }
+        .main-section p { font-size: 1.2em; color: #555; }
+
+        /* Links de Funcionalidade */
+        .feature-links { margin-top: 50px; display: flex; justify-content: center; gap: 40px; }
+        .feature-links a {
+            background-color: #28a745; /* Verde para educacional */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .feature-links a:hover { background-color: #1e7e34; }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div class="logo">Nexus Education</div>
+    <div class="search-area">
+        <input type="text" placeholder="Buscar Cursos ou Livros...">
+    </div>
+    <div class="nav-links">
+        <a href="#">Categoria de Livros</a>
+        <a href="#">Perfil</a>
+        <a href="/login">Sair</a>
+    </div>
+</div>
+
+<div class="main-section">
+    <h1>Bem-vindo ao Nexus Education</h1>
+    <p>Acesso gratuito e democrático ao conhecimento[cite: 11].</p>
+
+    <div class="feature-links">
+        <a href="/lista">Área de Gerenciamento de Dados (DEMO)</a>
+        <a href="#">Ver Livros para Download</a>
+    </div>
+</div>
+
+<div style="text-align: center; padding: 50px; color: #555;">
+    <p>Desenvolvido para o AEP - Arquitetura em Camadas (Java/Spring Boot)</p>
+</div>
+</body>
+</html>

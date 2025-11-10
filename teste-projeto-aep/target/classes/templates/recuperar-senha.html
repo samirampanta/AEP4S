@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Recuperar Senha</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 300px; text-align: center; }
+        h2 { color: #007bff; margin-bottom: 20px; }
+        input[type="email"] { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        .btn-recover { background-color: #ffc107; color: black; padding: 12px; border: none; border-radius: 5px; cursor: pointer; width: 100%; font-size: 1em; transition: background-color 0.3s; }
+        .btn-recover:hover { background-color: #e0a800; }
+        .link-area { margin-top: 15px; font-size: 0.9em; }
+        .link-area a { color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h2>Recuperar Senha</h2>
+    <p>Informe seu e-mail para receber as instruções.</p>
+    <form action="/login" method="get"> <input type="email" placeholder="Seu E-mail de Cadastro" required>
+        <button type="submit" class="btn-recover">Enviar Instruções</button>
+    </form>
+
+    <div class="link-area">
+        <p><a href="/login">Voltar para o Login</a></p>
+    </div>
+</div>
+</body>
+</html>

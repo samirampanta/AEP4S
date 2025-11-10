@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Acesso ao Conhecimento</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); width: 300px; text-align: center; }
+        h2 { color: #1e7e34; margin-bottom: 20px; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        .btn-login { background-color: #28a745; color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer; width: 100%; font-size: 1em; transition: background-color 0.3s; }
+        .btn-login:hover { background-color: #1e7e34; }
+        .link-area { margin-top: 20px; font-size: 0.95em; }
+        .link-area p { margin: 5px 0; }
+        .link-area a { color: #007bff; text-decoration: none; }
+        .link-area a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h2>Acesso ao Sistema</h2>
+    <form action="/fazer-login" method="post">
+        <input type="text" name="email" placeholder="E-mail" required>
+        <input type="password" name="senha" placeholder="Senha" required>
+        <button type="submit" class="btn-login">Entrar</button>
+        <div th:if="${erroLogin}" style="color: red; margin-bottom: 15px; border: 1px solid red; padding: 10px; border-radius: 4px;">
+            <p th:text="${erroLogin}"></p>
+        </div>
+    </form>
+
+    <div class="link-area">
+        <p>Não tem conta? <a href="/lista">Cadastre-se aqui</a></p>
+
+        <p><a href="/recuperar-senha">Esqueci minha senha</a></p>
+    </div>
+</div>
+</body>
+</html>
