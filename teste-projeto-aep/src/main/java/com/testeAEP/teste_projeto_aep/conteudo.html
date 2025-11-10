@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Educacional - Nexus Education</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #201b2c;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #2f2841;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .navbar-brand {
+      color: #00ff88 !important;
+      font-weight: 700;
+    }
+
+    .nav-link {
+      color: #f0ffffde !important;
+    }
+
+    .nav-link:hover {
+      color: #00ff88 !important;
+    }
+
+    .container h1 {
+      color: #00ff88;
+      font-weight: 700;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .card {
+      background-color: #2f2841;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .btn-ver, .btn-baixar {
+      background: linear-gradient(90deg, #00ff88, #00c2ff);
+      color: #2b134b;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-ver:hover, .btn-baixar:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 8px 25px -10px #00ff80;
+    }
+
+    footer {
+      margin-top: 60px;
+      background-color: #2f2841;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./logo/nexus.png" alt="Logo" width="50" height="50" class="me-2">
+        Nexus Education
+      </a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Sair</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Biblioteca Educacional</h1>
+    <p class="text-center text-secondary mb-5">Explore livros e conteúdos para ampliar seu conhecimento.</p>
+
+    <div class="row g-4">
+   
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <img src="https://img.icons8.com/fluency/200/book.png" class="card-img-top mx-auto" style="width:100px;" alt="Livro">
+          <div class="card-body">
+            <h5 class="card-title text-light">Matemática Básica</h5>
+            <p class="card-text text-secondary">Aprenda os fundamentos da matemática com exercícios práticos.</p>
+            <button class="btn btn-ver me-2">Ver mais</button>
+            <button class="btn btn-baixar">Baixar</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <img src="https://img.icons8.com/fluency/200/literature.png" class="card-img-top mx-auto" style="width:100px;" alt="Livro">
+          <div class="card-body">
+            <h5 class="card-title text-light">Literatura Brasileira</h5>
+            <p class="card-text text-secondary">Descubra os clássicos de Machado de Assis, Clarice Lispector e mais.</p>
+            <button class="btn btn-ver me-2">Ver mais</button>
+            <button class="btn btn-baixar">Baixar</button>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <img src="https://img.icons8.com/fluency/200/video.png" class="card-img-top mx-auto" style="width:100px;" alt="Vídeo">
+          <div class="card-body">
+            <h5 class="card-title text-light">Curso de História</h5>
+            <p class="card-text text-secondary">Assista a aulas sobre civilizações antigas e eventos marcantes.</p>
+            <button class="btn btn-ver me-2">Ver mais</button>
+            <button class="btn btn-baixar">Baixar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Nexus Education - Aprendizado para todos
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
